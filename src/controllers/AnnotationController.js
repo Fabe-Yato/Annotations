@@ -1,5 +1,7 @@
 import Annotations from "../models/AnnotationData.js";
 
+//Controllers é responsável pelo controle das requisições e respostas que são feitas a nossa API
+
 export default {
 
     async read(request, response){
