@@ -1,16 +1,22 @@
-const Notes = () => {
+import { AiTwotoneDelete, AiOutlineExclamationCircle } from "react-icons/ai"
+import "./Notes.css"
+import "./Notes-priority.css"
+
+const Notes = ({ data }) => {
     return(
         <>
-            <li className="notepad-infos">
+            <li className={data.priority ? "notepad-infos-priority": "notepad-infos"}>
                 <div>
-                    <h2>Fazer Compras</h2>
+                    <h2>{data.title}</h2>
                     <div>
-                        X
+                        <AiTwotoneDelete size="24"/>
                     </div>
                 </div>
 
-                <textarea defaultValue={"lorem ipsum, lorem lorem ipsum ipmsum lorisum"}></textarea>
-                <span>!</span>
+                <textarea defaultValue={data.notes} />
+                <span>
+                    <AiOutlineExclamationCircle size="24"/>
+                </span>
             </li>
         </>
     )
