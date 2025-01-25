@@ -9,7 +9,7 @@ const Notes = () => {
                     </div>
                 </div>
 
-                <textarea>lorem ipsum, lorem lorem ipsum ipmsum lorisum</textarea>
+                <textarea defaultValue={"lorem ipsum, lorem lorem ipsum ipmsum lorisum"}></textarea>
                 <span>!</span>
             </li>
         </>
